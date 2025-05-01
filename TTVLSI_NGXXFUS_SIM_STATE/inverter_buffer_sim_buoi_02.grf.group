@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--StateFileType saveLoadState-->
+<topLevel>
+    <SimpleProp Name="stateFileVersion" Value="@(#)$CDS: virtuoso version 6.1.5 12/17/2012 14:39 (cic2009lnx) $" Type="string" />
+    <SimpleProp Name="currentContext" Value="/home/buet/simulation/inverter_buffer_sim/spectre/schematic/psf" Type="stringValue" />
+    <IndexedProp Name="resultsDirMappingList">
+        <SimpleProp Name="__resDirStr_0" Value="/home/buet/simulation/inverter_buffer_sim/spectre/schematic/psf" Type="stringValue" />
+    </IndexedProp>
+    <IndexedProp Name="graphFileList">
+        <SimpleProp Value="/media/ngxxfus/cds_work/TTVLSI_NGXXFUS_SIM_STATE/inverter_buffer_sim_buoi_02_0.grf" Type="stringValue" />
+    </IndexedProp>
+</topLevel>

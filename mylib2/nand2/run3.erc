@@ -1,0 +1,12 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'nand2 layout mylib2':
+  info: Assign pin label "Bin" at (21.4525, 13.5725) to layer `Metal1_p'.
+  info: Assign pin label "Gnd" at (37.9125, 13.5250) to layer `Metal1_p'.
+  info: Assign pin label "Ain" at (20.7175, 50.7650) to layer `Metal1_p'.
+  info: Assign pin label "Vdd" at (37.4525, 49.8450) to layer `Metal1_p'.
+  info: Assign pin label "Out" at (54.5525, 50.1650) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

@@ -1,0 +1,10 @@
+# 0
+pmos1v(MOS): pmos1v(MOS)
+# 0
+nmos1v(MOS): nmos1v(MOS)
+# 4
+nand2 schematic mylib2: nand2 layout mylib2
+D NM2 avD1_2
+D NM0 avD1_1
+S PM1 avD7_2
+D PM0 avD7_1

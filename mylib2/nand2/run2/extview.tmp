@@ -1,0 +1,96 @@
+*
+*
+*
+*                       LINUX           Fri Feb  7 15:03:51 2014
+*
+*
+*
+*  PROGRAM  advgen
+*
+*  HSPICE LIBRARY
+*
+*
+*
+
+*
+.SUBCKT nand2 Vdd Gnd Ain Bin Out
+*
+*
+*  caps2d version: 10
+*
+*
+*       TRANSISTOR CARDS
+*
+*
+MavD1_1	avC6	Ain#4	Gnd#2	Gnd#3	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0144P	AS=0.072P	PD=0.36U	PS=1.08U
++ simW=2.4e-07 fw=2.4e-07
+MavD1_2	Out#3	Bin#3	avC6	Gnd#3	nmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.072P	AS=0.0144P	PD=1.08U	PS=0.36U
++ simW=2.4e-07 fw=2.4e-07
+MavD7_1	Out#2	Ain#2	Vdd#3	Vdd#6	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.0432P	AS=0.072P	PD=0.6U	PS=1.08U
++ simW=2.4e-07 fw=2.4e-07
+MavD7_2	Vdd#1	Bin#2	Out#2	Vdd#6	pmos1v#20ivpcell#20gpdk090	L=0.1U
++ W=0.24U
++ AD=0.072P	AS=0.0432P	PD=1.08U	PS=0.6U
++ simW=2.4e-07 fw=2.4e-07
+*
+*
+*       RESISTOR AND CAP/DIODE CARDS
+*
+Rh1	Vdd#5	Vdd#4	    0.3853	$mt2	$X=40.0175 $Y=36.0275
+Rh2	Vdd#4	Vdd#7	    0.1200	$mt2	$X=39.0625 $Y=36.0275
+Rh3	Gnd#4	Gnd#1	    0.4880	$mt2	$X=40.205 $Y=31.0325
+Rh4	Gnd#1	Gnd#5	    0.2507	$mt2	$X=38.8125 $Y=31.0325
+Ri1	Ain	Ain#1	   30.1547	$mt1	$X=21.515 $Y=40.24
+Ri2	Bin	Bin#1	   30.3637	$mt1	$X=21.81 $Y=25.385
+Ri3	Gnd#1	Gnd#2	   17.4262	$mt1	$X=39.29 $Y=31.8975
+Ri4	Vdd#1	Vdd#2	   15.8326	$mt1	$X=40.21 $Y=34.83
+Ri5	Vdd#2	Vdd#3	   15.4094	$mt1	$X=39.29 $Y=34.83
+Ri6	Vdd#2	Vdd#4	    1.8909	$mt1	$X=39.29 $Y=35.595
+Ri7	Vdd#5	Vdd#6	   16.9751	$mt1	$X=40.7375 $Y=35.56
+Ri8	Gnd#3	Gnd#4	   17.0116	$mt1	$X=41.125 $Y=31.595
+Ri9	Vdd#7	Vdd	    8.5402	$mt1	$X=38.845 $Y=41.385
+Ri10	Gnd#5	Gnd	    9.6769	$mt1	$X=38.35 $Y=24.8325
+Ri11	Out	Out#1	   19.0629	$mt1	$X=55.27 $Y=40.045
+Ri12	Out#1	Out#2	   15.7131	$mt1	$X=39.855 $Y=33.44
+Ri13	Out#1	Out#3	   15.3539	$mt1	$X=39.965 $Y=33.15
+Rj1	Ain#2	Ain#3	   48.7287	$poly	$X=39.515 $Y=34.105
+Rj2	Ain#3	Ain#1	   44.2562	$poly	$X=39.2125 $Y=33.8275
+Rj3	Ain#3	Ain#4	   90.2287	$poly	$X=39.515 $Y=33.3425
+Rj4	Bin#2	Bin#3	  154.0166	$poly	$X=39.975 $Y=34.02
+Rj5	Bin#3	Bin#1	  103.0817	$poly	$X=39.735 $Y=32.415
+*
+*       CAPACITOR CARDS
+*
+*
+C1	Vdd	Gnd	8.486E-15	$X=42.804 $Y=51.3825
+C2	Ain	Gnd	9.136E-15	$X=22.904 $Y=45.2245
+C3	Bin	Gnd	9.127E-15	$X=23.187 $Y=19.576
+C4	Out	Gnd	9.090E-15	$X=55.287 $Y=45.0375
+C5	avS21	Gnd	8.169E-15	$X=56.8515 $Y=13.182
+C6	Ain#2	Gnd	6.393E-17	$X=39.5125 $Y=34.42
+C7	Bin#2	Gnd	1.273E-16	$X=39.973 $Y=34.1745
+C8	Ain#4	Gnd	1.137E-16	$X=39.5125 $Y=32.918
+C9	Bin#3	Gnd	1.957E-16	$X=39.733 $Y=32.854
+C10	Ain#1	Gnd	1.156E-15	$X=34.8495 $Y=33.821
+C11	Bin#1	Gnd	1.231E-15	$X=35.0325 $Y=32.05
+C12	Vdd#7	Gnd	4.761E-16	$X=38.7025 $Y=37.435
+C13	Vdd#4	Gnd	7.277E-17	$X=39.4135 $Y=35.932
+C14	Vdd#5	Gnd	1.332E-16	$X=40.7385 $Y=35.927
+C15	Vdd#6	Gnd	8.237E-17	$X=40.4945 $Y=34.97
+C16	Vdd#3	Gnd	3.199E-17	$X=39.3005 $Y=34.504
+C17	Out#2	Gnd	8.396E-17	$X=39.7415 $Y=34.3215
+C18	Vdd#1	Gnd	3.547E-17	$X=40.191 $Y=34.6075
+C19	Out#3	Gnd	3.582E-17	$X=39.948 $Y=32.8545
+C20	Ain#3	Gnd	9.842E-17	$X=39.513 $Y=33.721
+C21	Vdd#2	Gnd	3.879E-17	$X=39.288 $Y=35.209
+C22	Out#1	Gnd	1.100E-15	$X=47.4795 $Y=33.4315
+*
+*
+.ENDS nand2
+*

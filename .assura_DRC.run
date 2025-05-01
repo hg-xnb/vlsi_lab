@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/home/buet/cadence/ASSURA41/tools/assura/bin/assura /home/buet/cds_work/mylib2/nand2/run3.rsf -gui
+exit $?

@@ -1,0 +1,5 @@
+"pmos1v(MOS)" "pmos1v(MOS)"
+"nmos1v(MOS)" "nmos1v(MOS)"
+"nand2 layout mylib2" "nand2 schematic mylib2" "nmos1v(MOS)" "pmos1v(MOS)"
+Devices filtered from layout
+"TIE"

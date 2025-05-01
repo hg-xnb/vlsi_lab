@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      group1
+HostName                       CadenceServer.localdomain
+ProcessIdentifier              10742
+ProcessCreationTime_UTC        1384323404
+ProcessCreationTime_Readable   Wed Nov 13 12:16:44 2013 BDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/group1/cds_work/mylib/mynot/symbol/symbol.oa.cdslck
+TimeEditLocked                 Wed Nov 13 16:26:41 2013 BDT
