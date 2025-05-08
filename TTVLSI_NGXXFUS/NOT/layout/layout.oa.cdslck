@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Thu May  8 21:26:37 2025 BDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /media/ngxxfus/cds_work/TTVLSI_NGXXFUS/NOT/schematic/sch.oa.cdslck
-TimeEditLocked                 Thu May  8 21:26:50 2025 BDT
+FilePathUsedToEditLock         /media/ngxxfus/cds_work/TTVLSI_NGXXFUS/NOT/layout/layout.oa.cdslck
+TimeEditLocked                 Thu May  8 21:26:58 2025 BDT

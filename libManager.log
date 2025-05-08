@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.5 - CAT32 10/23/2012 17:36 (cat91amd) $
 \o Sub version:		sub-version  s011 
-\o Arguments:		-unmapped -mpssession virtuoso6441 -mpshost cadence 
+\o Arguments:		-unmapped -mpssession virtuoso5205 -mpshost cadence 
 \o Working Directory:	cadence:/media/ngxxfus/cds_work
 \o Qt version: 		4.5.3
 \o changeWorkingDir("/media/ngxxfus/cds_work") unnecessary.
@@ -9,36 +9,34 @@
 \o Opening libManager window.
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
-\o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(0 0 1916 1025))
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(0 0 1900 843))
 \a cdsLibManager->libListBox->value = "TTVLSI_NGXXFUS"
 \a cdsLibManager->libLineEdit->value = "TTVLSI_NGXXFUS"
-\a cdsLibManager->cellListBox->value = "TG-NOR"
-\a lmgrLogShowPopup("mainListPopup1" 169 196 2 "TG-NOR")
-\a cdsLibManager->cellLineEdit->value = "TG-NOR"
+\a cdsLibManager->cellListBox->value = "REG-4B-SISO"
+\a lmgrLogShowPopup("mainListPopup1" 39 162 2 "REG-4B-SISO")
+\a cdsLibManager->cellLineEdit->value = "REG-4B-SISO"
 \a cdsLibManager->editRenameButton->value = t
-\a basicRenameForm->basicRenameFromEdit->value = "TG-NOR"
+\a basicRenameForm->basicRenameFromEdit->value = "REG-4B-SISO"
 \a nrSetWindowVisibility(basicRenameForm "show")
-\a basicRenameForm->basicRenameToEdit->value = "TG-NOR"
+\a basicRenameForm->basicRenameToEdit->value = "REG-4B-SISO"
 \a nrSetCurrentWindow(basicRenameForm)
-\a nrResizeWindow(basicRenameForm list(787 307 343 180))
-\a basicRenameForm->basicRenameToEdit->value = "TG-XOR"
-\a nrDialogAccept(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(779 247 343 180))
+\a basicRenameForm->basicRenameToEdit->value = "REG-4BIT-SISO"
 \a basicRenameForm->OK->value = t
-\o Renaming Cell "TG-NOR" to "TG-XOR" in library "TTVLSI_NGXXFUS".
+\o Renaming Cell "REG-4B-SISO" to "REG-4BIT-SISO" in library "TTVLSI_NGXXFUS".
 \a nrSetWindowVisibility(workingDialogForm "show")
 \a nrSetCurrentWindow(workingDialogForm)
-\a basicRenameForm->basicRenameToEdit->value = "TG-XOR"
-\a nrResizeWindow(workingDialogForm list(818 324 281 131))
+\a nrResizeWindow(workingDialogForm list(810 263 281 131))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "TTVLSI_NGXXFUS"
 \a cdsLibManager->libLineEdit->value = "TTVLSI_NGXXFUS"
-\a cdsLibManager->cellListBox->value = "TG-NOR"
-\a cdsLibManager->cellLineEdit->value = "TG-NOR"
+\a cdsLibManager->cellListBox->value = "REG-4B-SISO"
+\a cdsLibManager->cellLineEdit->value = "REG-4B-SISO"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a nrSetCurrentWindow(cdsLibManager)
@@ -46,12 +44,20 @@
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "TTVLSI_NGXXFUS"
 \a cdsLibManager->libLineEdit->value = "TTVLSI_NGXXFUS"
-\a cdsLibManager->cellListBox->value = "TG-XOR"
-\a cdsLibManager->cellLineEdit->value = "TG-XOR"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "D-FF"
+\a cdsLibManager->cellListBox->value = "REG-4BIT-SISO"
+\a cdsLibManager->cellListBox->value = "SUB-4BIT"
+\a cdsLibManager->cellListBox->value = "UP-COUNTER-4BIT"
+\a nrListItemAction(cdsLibManager->cellListBox 18 0)
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "TTVLSI_NGXXFUS"
+\a cdsLibManager->libLineEdit->value = "TTVLSI_NGXXFUS"
+\a cdsLibManager->cellListBox->value = "UP-COUNTER-4BIT"
+\a cdsLibManager->cellLineEdit->value = "UP-COUNTER-4BIT"
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
