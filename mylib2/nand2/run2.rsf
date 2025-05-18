@@ -28,8 +28,8 @@ avCompareRules(
 ;----------------------------------------------------------------------------
 
 avParameters(
-  ?inputLayout ( "df2" "mylib2" )
-  ?cellName "nand2"
+  ?inputLayout ( "df2" "TTVLSI_NGXXFUS" )
+  ?cellName "NOT"
   ?viewName "layout"
   ?runName "run2"
   ?workingDirectory "./mylib2/nand2"
@@ -1656,7 +1656,7 @@ avCompareRules(
 
 avCompareRules(
 schematic(
-netlist( dfII "/home/buet/cds_work/mylib2/nand2/run2.vlr" )
+netlist( dfII "/media/ngxxfus/cds_work/mylib2/nand2/run2.vlr" )
 )
 bindingFile("/home/buet/cadence/gpdk090_v4.6/assura/bind.rul")
 )

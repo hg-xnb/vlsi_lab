@@ -1,0 +1,11 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'NOT layout TTVLSI_NGXXFUS':
+  info: Assign pin label "INPUT" at (0.0600, 3.5000) to layer `Metal1_p'.
+  info: Assign pin label "VSS" at (3.5000, 0.0600) to layer `Metal1_p'.
+  info: Assign pin label "VDD" at (3.5000, 6.9400) to layer `Metal1_p'.
+  info: Assign pin label "OUTPUT" at (6.9400, 3.5000) to layer `Metal1_p'.
+
+***** End of Label Report *****
+

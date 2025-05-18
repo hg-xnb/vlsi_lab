@@ -1,0 +1,36 @@
+@(#)$CDS: nvn version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
+sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
+run on cadence at Mon May 12 08:58:24 2025
+
+Schematic                       | Layout                       | Status
+-------------------------------------------------------------------------------
+NOT schematic TTVLSI_NGXXFUS    | NOT layout TTVLSI_NGXXFUS    | errors      *
+
+Mismatch between Schematic and Layout
+   1 cell with errors
+
+Schematic:
+  Library:TTVLSI_NGXXFUS
+  Cell   :NOT
+  View   :schematic
+
+Layout:
+  Library:TTVLSI_NGXXFUS
+  Cell   :NOT
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     1 cells have 2 Net mismatches
+     1 cells have 1 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

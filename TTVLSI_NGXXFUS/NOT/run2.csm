@@ -1,0 +1,6 @@
+Schematic                       | Layout                       | Status
+-------------------------------------------------------------------------------
+NOT schematic TTVLSI_NGXXFUS    | NOT layout TTVLSI_NGXXFUS    | errors      *
+
+Mismatch between Schematic and Layout
+   1 cell with errors

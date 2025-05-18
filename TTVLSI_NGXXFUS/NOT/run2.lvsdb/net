@@ -1,0 +1,6 @@
+; Assura generated file -- DO NOT EDIT --
+; Do NOT rely on the content of this file, it may change.
+;
+2 bind match unmatched shorts opens
+1 0 ((L "OUTPUT")((1 "nmos1v" ( "D" "S"))(1 "nmos1v" ( "B"))(1 "pmos1v" ( "D" "S")))(S "OUTPUT")((1 "nmos1v" ( "D" "S"))(1 "pmos1v" ( "D" "S"))))
+1 0 ((L "VSS")((1 "nmos1v" ( "D" "S")))(S "VSS")((1 "nmos1v" ( "D" "S"))(1 "nmos1v" ( "B"))))

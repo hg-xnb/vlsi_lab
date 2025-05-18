@@ -5,7 +5,7 @@
 @(#)$CDS: aveng version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:12 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/aveng on Fri Feb  7 14:57:33 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/aveng on Mon May 12 07:55:09 2025
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -38,8 +38,8 @@ Echoing run specific file...
     ;----------------------------------------------------------------------------
     
     avParameters(
-      ?inputLayout ( "df2" "mylib2" )
-      ?cellName "nand2"
+      ?inputLayout ( "df2" "TTVLSI_NGXXFUS" )
+      ?cellName "NOT"
       ?viewName "layout"
       ?runName "run2"
       ?workingDirectory "./mylib2/nand2"
@@ -1666,7 +1666,7 @@ Echoing run specific file...
     
     avCompareRules(
     schematic(
-    netlist( dfII "/home/buet/cds_work/mylib2/nand2/run2.vlr" )
+    netlist( dfII "/media/ngxxfus/cds_work/mylib2/nand2/run2.vlr" )
     )
     bindingFile("/home/buet/cadence/gpdk090_v4.6/assura/bind.rul")
     )
@@ -1680,31 +1680,31 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap  165.5M virt       0 pf
-LVS preprocessing. . . .      1 cpu      3 elap   90.9M virt       0 pf
-duplicate inst removal .      0 cpu      0 elap   90.9M virt       0 pf
-cell boundary layer. . .      0 cpu      0 elap   90.9M virt       0 pf
-small cell flattening. .      0 cpu      0 elap   90.9M virt       0 pf
-recognize standard cells      0 cpu      0 elap   90.9M virt       0 pf
-small cell flattening. .      0 cpu      0 elap   90.9M virt       0 pf
-duplicate inst removal .      0 cpu      0 elap   90.9M virt       0 pf
-cluster overlapped insts      0 cpu      0 elap   90.9M virt       0 pf
-expand thin cells. . . .      0 cpu      0 elap   90.9M virt       0 pf
-pattern analysis . . . .      0 cpu      0 elap   90.9M virt       0 pf
-array analysis . . . . .      0 cpu      0 elap   90.9M virt       0 pf
-extended dup inst remove      0 cpu      0 elap   90.9M virt       0 pf
+reading DFII data. . . .      0 cpu      0 elap  166.6M virt     296 pf
+LVS preprocessing. . . .      1 cpu      2 elap   90.9M virt       4 pf
+duplicate inst removal .      0 cpu      0 elap   90.9M virt       8 pf
+cell boundary layer. . .      0 cpu      0 elap   90.9M virt       9 pf
+small cell flattening. .      0 cpu      0 elap   90.9M virt       9 pf
+recognize standard cells      0 cpu      0 elap   90.9M virt      10 pf
+small cell flattening. .      0 cpu      0 elap   90.9M virt      10 pf
+duplicate inst removal .      0 cpu      0 elap   90.9M virt      10 pf
+cluster overlapped insts      0 cpu      0 elap   90.9M virt      11 pf
+expand thin cells. . . .      0 cpu      0 elap   90.9M virt      11 pf
+pattern analysis . . . .      0 cpu      0 elap   90.9M virt      11 pf
+array analysis . . . . .      0 cpu      0 elap   90.9M virt      12 pf
+extended dup inst remove      0 cpu      0 elap   90.9M virt      12 pf
 cell repetition analysis      0 cpu      0 elap   90.9M virt       0 pf
 enclosing polygon proc .      0 cpu      0 elap   90.9M virt       0 pf
 overlapping array proc .      0 cpu      0 elap   90.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap   90.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap   90.9M virt       0 pf
 building avGrids . . . .      0 cpu      0 elap   90.9M virt       0 pf
-group shapes processing.      0 cpu      0 elap   90.9M virt       0 pf
-duplicate inst removal .      0 cpu      0 elap   90.9M virt       0 pf
-duplicate cell removal .      0 cpu      0 elap   90.9M virt       0 pf
-final VDB processing . .      0 cpu      0 elap   90.9M virt       0 pf
+group shapes processing.      0 cpu      0 elap   90.9M virt       1 pf
+duplicate inst removal .      0 cpu      0 elap   90.9M virt       1 pf
+duplicate cell removal .      0 cpu      0 elap   90.9M virt       1 pf
+final VDB processing . .      0 cpu      0 elap   90.9M virt       1 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
+TOTALS (secs). . . . . .      1 cpu      2 elap  166.6M virt     417 pf
 
 
 ************************************************************************
@@ -1764,15 +1764,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 14
     Metal1_d = geomOr( Metal1_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
 
  ;# 15
     Metal1_d_pin = geomOr( Metal1_d_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 6
 
  ;# 16
     Metal1_d = geomOr( Metal1_d Metal1_d_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
 
  ;# 17
     Metal1_p = geomOr( Metal1_p ) 
@@ -1780,11 +1780,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 18
     Metal1_p_pin = geomOr( Metal1_p_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 6
 
  ;# 19
     Metal1_p = geomOr( Metal1_p Metal1_p_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 6
 
  ;# 20
     dataReduction( Metal1_p ) 
@@ -1792,11 +1792,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 21
  ;  region( Metal1_p )
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 6
 
  ;# 22
     Metal2_d = geomOr( Metal2_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 0
 
  ;# 23
     Metal2_d_pin = geomOr( Metal2_d_pin ) 
@@ -1804,7 +1804,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 24
     Metal2_d = geomOr( Metal2_d Metal2_d_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 0
 
  ;# 25
     Metal2_p = geomOr( Metal2_p ) 
@@ -2088,7 +2088,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 95
     Nwell_pin = geomOr( Nwell_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 1
 
  ;# 96
     Nwell = geomOr( Nwell Nwell_pin ) 
@@ -2112,15 +2112,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 101
     Poly = geomOr( Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
 
  ;# 102
     Poly_pin = geomOr( Poly_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 8
 
  ;# 103
     Poly = geomOr( Poly Poly_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
 
  ;# 104
     Psub = geomOr( Psub ) 
@@ -2136,7 +2136,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 107
     Metal1_v = geomAnd( Metal1_d Metal1_p ) 
-    cpu: 0.0   elapsed: 0   virtual: 111M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 111M   task sum: 6
 
  ;# 108
     dataReduction( Metal1_v ) 
@@ -2228,11 +2228,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 130
     Cont = geomOr( Cont ) 
-    cpu: 0.0   elapsed: 0   virtual: 111M   task sum: 9
+    cpu: 0.0   elapsed: 0   virtual: 111M   task sum: 55
 
  ;# 131
     cont_poly = geomAnd( Cont Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 0
 
  ;# 132
     dataReduction( cont_poly ) 
@@ -2320,7 +2320,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 153
     pdiff = geomAndNot( T?272 Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 154
     Resdum = geomOr( Resdum ) 
@@ -2328,7 +2328,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 155
     poly_conn = geomAndNot( Poly Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 4
 
  ;# 156
     dataReduction( poly_conn ) 
@@ -2336,7 +2336,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 157
  ;  region( poly_conn )
-    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 113M   task sum: 4
 
  ;# 158
     T?276 = geomOr( nactive ) 
@@ -2344,7 +2344,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 159
     ndiff = geomAndNot( T?276 poly_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 160
     Via2 = geomOr( Via2 ) 
@@ -2404,11 +2404,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 174
     L46829 = geomAndNot( ndiff Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 175
     ndiff_conn = geomAndNot( L46829 NPNdummy ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 176
     dataReduction( ndiff_conn ) 
@@ -2416,11 +2416,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 177
  ;  region( ndiff_conn )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 178
     cont_ndiff = geomAnd( Cont ndiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 25
 
  ;# 179
     dataReduction( cont_ndiff ) 
@@ -2480,11 +2480,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 193
     L12267 = geomAndNot( pdiff Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 194
     pdiff_conn = geomAndNot( L12267 NPNdummy ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 195
     dataReduction( pdiff_conn ) 
@@ -2492,7 +2492,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 196
  ;  region( pdiff_conn )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
 
  ;# 197
     PNPdummy = geomOr( PNPdummy ) 
@@ -2508,7 +2508,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 200
     cont_pdiff = geomAnd( Cont pdiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 30
 
  ;# 201
     dataReduction( cont_pdiff ) 
@@ -2572,15 +2572,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 216
     Metal1_d_n = geomCat( Metal1_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 217
     T?317 = geomOr( Metal1_d_n ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 218
     L59680 = geomOr( T?317 Metal1_p ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 5
 
  ;# 219
     Metal1_f = geomOr( Metal1_f ) 
@@ -2588,7 +2588,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 220
     Metal1 = geomOr( L59680 Metal1_f ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 221
     Metal1_slot = geomOr( Metal1_slot ) 
@@ -2596,7 +2596,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 222
     L32159 = geomAndNot( Metal1 Metal1_slot ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 223
     M1Resdum = geomOr( M1Resdum ) 
@@ -2612,7 +2612,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 226
     metal1_conn = geomAndNot( L32159 M1Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 227
     dataReduction( metal1_conn ) 
@@ -2620,7 +2620,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 228
  ;  region( metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 10
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
 
  ;# 229
     cont_poly = groupVias(  via(cont_poly) conn1(metal1_conn) conn2(poly_conn) )
@@ -2632,7 +2632,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 231
  ;  region( cont_poly )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 232
     cont_ndiff = groupVias(  via(cont_ndiff) conn1(metal1_conn) conn2(ndiff_conn) )
@@ -2644,7 +2644,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 234
  ;  region( cont_ndiff )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 25
 
  ;# 235
     cont_base = groupVias(  via(cont_base) conn1(metal1_conn) conn2(npn_base) )
@@ -2668,7 +2668,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 240
  ;  region( Metal1_v )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 6
 
  ;# 241
     cont_pdiff = groupVias(  via(cont_pdiff) conn1(metal1_conn) conn2(pdiff_conn) )
@@ -2680,15 +2680,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 243
  ;  region( cont_pdiff )
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 30
 
  ;# 244
     cont_coll = groupVias(  via(cont_coll) conn1(metal1_conn) conn2(npn_coll) )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 245
     dataReduction( cont_coll ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 246
  ;  region( cont_coll )
@@ -2696,15 +2696,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 247
     Metal2_d_n = geomCat( Metal2_d ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 248
     T?327 = geomOr( Metal2_d_n ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 249
     L17344 = geomOr( T?327 Metal2_p ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 250
     Metal2_f = geomOr( Metal2_f ) 
@@ -2712,7 +2712,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 251
     Metal2 = geomOr( L17344 Metal2_f ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 252
     Metal2_slot = geomOr( Metal2_slot ) 
@@ -2720,7 +2720,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 253
     L6015 = geomAndNot( Metal2 Metal2_slot ) 
-    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 115M   task sum: 0
 
  ;# 254
     M2Resdum = geomOr( M2Resdum ) 
@@ -2756,7 +2756,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 262
     metal2_conn = geomAndNot( L6015 M2Resdum ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 263
     dataReduction( metal2_conn ) 
@@ -2764,7 +2764,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 264
  ;  region( metal2_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 265
     ind_term2_tap = groupVias(  via(ind_term2_tap) conn1(metal2_conn) conn2(ind_term2) )
@@ -3404,11 +3404,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 424
     L66375 = geomAnd( L28394 Poly ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
 
  ;# 425
     L29970 = geomAnd( L66375 Pimp ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 426
     Phvt = geomOr( Phvt ) 
@@ -3492,7 +3492,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 446
     L90381 = geomAndNot( Poly SiProt ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 4
 
  ;# 447
     L49196 = geomAnd( L90381 Nimp ) 
@@ -3640,7 +3640,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 483
     L62733 = geomAndNot( L29970 Phvt ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 484
     _pmoscap_12 = geomAnd( Capdum L62733 ) 
@@ -3660,7 +3660,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 488
     L89552 = geomAnd( L66375 Nimp ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 489
     Nzvt = geomOr( Nzvt ) 
@@ -3668,7 +3668,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 490
     L25441 = geomAndNot( L89552 Nzvt ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 491
     Nhvt = geomOr( Nhvt ) 
@@ -3688,7 +3688,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 495
     L70734 = geomAndNot( L25441 Nhvt ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 496
     _nmos_12_iso = geomAnd( L70734 Nburied ) 
@@ -3736,11 +3736,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 507
     _pmos_12 = geomAndNot( L62733 L8948 ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 508
  ;  region( _pmos_12 )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 509
     bulk = geomOr( bulk ) 
@@ -3776,7 +3776,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 517
     L8530 = geomAndNot( L70734 Nburied ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 518
     _nmoscap_12 = geomAnd( Capdum L8530 ) 
@@ -3824,11 +3824,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 529
     _nmos_12 = geomAndNot( L8530 L8948 ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 530
  ;  region( _nmos_12 )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 1
 
  ;# 531
     _nmos_25 = geomAndNot( L64343 L8948 ) 
@@ -3960,7 +3960,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 563
     Via1 = geomOr( Via1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 564
     dataReduction( Via1 ) 
@@ -3976,7 +3976,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 567
  ;  region( Via1 )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 568
  ;  via( bp_tap Bondpad )
@@ -4116,11 +4116,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 602
  ;  via( Via1 metal2_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 603
  ;  via( Via1 metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 604
  ;  via( ind_term1_tap metal2_conn )
@@ -4140,35 +4140,35 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 608
  ;  via( Metal1_v Metal1_p )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
 
  ;# 609
  ;  via( Metal1_v metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 6
 
  ;# 610
  ;  via( cont_poly metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 611
  ;  via( cont_poly poly_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 0
 
  ;# 612
  ;  via( cont_pdiff metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 30
 
  ;# 613
  ;  via( cont_pdiff pdiff_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 30
 
  ;# 614
  ;  via( cont_ndiff metal1_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 25
 
  ;# 615
  ;  via( cont_ndiff ndiff_conn )
-    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 118M   task sum: 25
 
  ;# 616
  ;  via( cont_emit metal1_conn )
@@ -4277,11 +4277,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 626
     T?515 = geomCat( pdiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 3
 
  ;# 627
  ;  region( T?515 )
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 3
 
  ;# 628
     ptap_StampErrorFloat = geomOutside( ptap T?515  )
@@ -4355,11 +4355,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 644
     T?529 = geomCat( ndiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 3
 
  ;# 645
  ;  region( T?529 )
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 3
 
  ;# 646
     ntap_StampErrorFloat = geomOutside( ntap T?529  )
@@ -4507,11 +4507,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 679
     T?2345 = geomAndNot( _nmos_12 T?2344 ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 1
 
  ;# 680
     T?2152 = _geomExtractMerge( T?2345 ) 
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 1
 
  ;# 681
     unstable_device_for__nmos_12_MOS_1 = unstableDevices( "nmos1v" _nmos_12_MOS_1 T?2152)
@@ -4523,7 +4523,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 683
  ;  region( T?2152 )
-    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 108M   task sum: 1
 
  ;# 684
     T?2346 = _geomPushDown( poly_conn T?2152 and ) 
@@ -4567,15 +4567,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 694
  ;  region( _nmos_12_MOS_1_shape )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 695
  ;  region( _nmos_12_MOS_1 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 696
     T?2154 = geomOr( T?2152 T?2344 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 697
     errorLayer( geomAndNot( T?2154 _nmos_12_MOS_1 ) "malformed device _nmos_12" ) 
@@ -4583,7 +4583,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 698
     EDGE_T?567 = drc( _nmos_12 ndiff_conn sep == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 699
     dataReduction( EDGE_T?567 ) 
@@ -4591,11 +4591,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 700
     T?2595 = drcEdgePrep( EDGE_T?567 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 701
  ;  region( T?2595 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 702
     ATTACH_T?569  = measureParameter( length ( _nmos_12 butting ndiff_conn ) 0.5 ) 
@@ -4619,15 +4619,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 707
     T?574 = geomAndNot( _nmos_12 ndiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 708
  ;  region( T?574 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 709
     EDGE_T?575  = geomGetEdge( T?574 outside ndiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 710
     dataReduction( EDGE_T?575 ) 
@@ -4635,7 +4635,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 711
  ;  region( EDGE_T?575 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 712
     ATTACH_T?578  = measureParameter( length ( _nmos_12 outside ndiff_conn ) 0.5 ) 
@@ -4651,11 +4651,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 715
     MPI_T?584 = geomButtOrOver( ndiff_conn _nmos_12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 716
  ;  region( MPI_T?584 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 717
     ATTACH_T?585  = measureParameter( area ( MPI_T?584 ) ) 
@@ -5603,11 +5603,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 953
     T?2384 = geomAndNot( _pmos_12 T?2383 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 954
     T?2170 = _geomExtractMerge( T?2384 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 955
     unstable_device_for__pmos_12_MOS_7 = unstableDevices( "pmos1v" _pmos_12_MOS_7 T?2170)
@@ -5619,7 +5619,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 957
  ;  region( T?2170 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 958
     T?2385 = _geomPushDown( poly_conn T?2170 and ) 
@@ -5663,15 +5663,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 968
  ;  region( _pmos_12_MOS_7_shape )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 969
  ;  region( _pmos_12_MOS_7 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 970
     T?2172 = geomOr( T?2170 T?2383 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 971
     errorLayer( geomAndNot( T?2172 _pmos_12_MOS_7 ) "malformed device _pmos_12" ) 
@@ -5679,7 +5679,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 972
     EDGE_T?791 = drc( _pmos_12 pdiff_conn sep == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 973
     dataReduction( EDGE_T?791 ) 
@@ -5687,11 +5687,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 974
     T?2601 = drcEdgePrep( EDGE_T?791 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 975
  ;  region( T?2601 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 976
     ATTACH_T?793  = measureParameter( length ( _pmos_12 butting pdiff_conn ) 0.5 ) 
@@ -5715,15 +5715,15 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 981
     T?798 = geomAndNot( _pmos_12 pdiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 982
  ;  region( T?798 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 1
 
  ;# 983
     EDGE_T?799  = geomGetEdge( T?798 outside pdiff_conn ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 984
     dataReduction( EDGE_T?799 ) 
@@ -5731,7 +5731,7 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 985
  ;  region( EDGE_T?799 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 4
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 986
     ATTACH_T?802  = measureParameter( length ( _pmos_12 outside pdiff_conn ) 0.5 ) 
@@ -5747,11 +5747,11 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 
  ;# 989
     MPI_T?808 = geomButtOrOver( pdiff_conn _pmos_12 ) 
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 990
  ;  region( MPI_T?808 )
-    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 120M   task sum: 2
 
  ;# 991
     ATTACH_T?809  = measureParameter( area ( MPI_T?808 ) ) 
@@ -12433,9 +12433,9 @@ TOTALS (secs). . . . . .      1 cpu      3 elap  165.5M virt       0 pf
 Total cells checked = 1
 Total rules checked = 2658
 
-Run time =  7.00 seconds
-CPU time =  1.59 seconds
-VM HWM   =   165 Mbytes
+Run time =  6.00 seconds
+CPU time =  1.67 seconds
+VM HWM   =   167 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

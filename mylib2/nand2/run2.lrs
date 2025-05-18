@@ -1,21 +1,23 @@
 @(#)$CDS: nvn version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
-run on cadence at Fri Feb  7 14:57:44 2014
+run on cadence at Mon May 12 07:55:18 2025
 
-Schematic                     | Layout                     | Status
+Schematic                    | Layout                     | Status
 -------------------------------------------------------------------------------
-nand2 schematic mylib2        | nand2 layout mylib2        | matched        
+NOT schematic TTVLSI_NGXXFUS | NOT layout TTVLSI_NGXXFUS  | errors,          *
+                             |                            | fatal pin errs   *
 
-Schematic and Layout Match
+Mismatch between Schematic and Layout
+   1 cell with errors
 
 Schematic:
-  Library:mylib2
-  Cell   :nand2
+  Library:TTVLSI_NGXXFUS
+  Cell   :NOT
   View   :schematic
 
 Layout:
-  Library:mylib2
-  Cell   :nand2
+  Library:TTVLSI_NGXXFUS
+  Cell   :NOT
   View   :layout
 
 
@@ -28,8 +30,8 @@ Extraction  Information
 
 Mismatch  Information
 --------------------
-     0 cells have 0 Net mismatches
+     1 cells have 1 Net mismatches
      0 cells have 0 Device mismatches
-     0 cells have 0 Pin mismatches
+     1 cells have 2 Pin mismatches
      0 cells have 0 Parameter mismatches
 

@@ -1,0 +1,8 @@
+# 0
+pmos1v(MOS): pmos1v(MOS)
+# 0
+nmos1v(MOS): nmos1v(MOS)
+# 2
+NOT schematic TTVLSI_NGXXFUS: NOT layout TTVLSI_NGXXFUS
+D NM0 avD1_1
+D PM0 avD7_1

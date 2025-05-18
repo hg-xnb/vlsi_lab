@@ -6,14 +6,14 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:11 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/assura on Fri Feb  7 14:57:32 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/assura on Mon May 12 07:55:09 2025
 
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/aveng /home/buet/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /home/buet/cds_work/cds.lib
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/aveng /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /media/ngxxfus/cds_work/cds.lib
 @(#)$CDS: aveng version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:12 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/aveng on Fri Feb  7 14:57:33 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/aveng on Mon May 12 07:55:09 2025
 
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
@@ -24,14 +24,14 @@ Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
  Summary Report: run2.sum
- RSF           : /home/buet/cds_work/mylib2/nand2/run2.rsf
- Library Name  : mylib2
- CDSLIB Path   : "/home/buet/cds_work/cds.lib"
- Cell Name     : nand2
+ RSF           : /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf
+ Library Name  : TTVLSI_NGXXFUS
+ CDSLIB Path   : "/media/ngxxfus/cds_work/cds.lib"
+ Cell Name     : NOT
  View Name     : layout
  Rules File    : /home/buet/cadence/gpdk090_v4.6/assura/extract.rul
- Options       : -exec1 -LVS -cdslib /home/buet/cds_work/cds.lib 
- Work Directory: /home/buet/cds_work/mylib2/nand2
+ Options       : -exec1 -LVS -cdslib /media/ngxxfus/cds_work/cds.lib 
+ Work Directory: /media/ngxxfus/cds_work/mylib2/nand2
  Operating Mode: Legacy Mode is Off
 
 
@@ -40,7 +40,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/dfIIToVdb on Fri Feb  7 14:57:34 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/dfIIToVdb on Mon May 12 07:55:10 2025
 
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
@@ -95,17 +95,17 @@ Building the VDB part 2 in background mode.
 Building tables for LVS Preprocessing in background mode.
 
 
-Starting /home/buet/cadence/ASSURA41/tools/assura/bin/vdbToCells /home/buet/cds_work/mylib2/nand2 run2
+Starting /home/buet/cadence/ASSURA41/tools/assura/bin/vdbToCells /media/ngxxfus/cds_work/mylib2/nand2 run2
 
 Finished /home/buet/cadence/ASSURA41/tools/assura/bin/vdbToCells
 
 Starting Nvn PreExtraction...
 
-Starting /home/buet/cadence/ASSURA41/tools/assura/bin/nvn /home/buet/cds_work/mylib2/nand2/run2.rsf -preExtract -exec1 -cdslib /home/buet/cds_work/cds.lib
+Starting /home/buet/cadence/ASSURA41/tools/assura/bin/nvn /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -preExtract -exec1 -cdslib /media/ngxxfus/cds_work/cds.lib
 Checking out license for Assura_LVS 4.10 
 @(#)$CDS: nvn version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
-run on cadence at Fri Feb  7 14:57:37 2014
+run on cadence at Mon May 12 07:55:13 2025
   
 *************************************************************** 
   
@@ -118,12 +118,12 @@ run on cadence at Fri Feb  7 14:57:37 2014
 *************************************************************** 
  
 Reading schematic network
- running dfIIToVldb -cdslib /home/buet/cds_work/cds.lib /home/buet/cds_work/mylib2/nand2/run2.vlr /home/buet/cds_work/mylib2/nand2/run2.rsf
+ running dfIIToVldb -cdslib /media/ngxxfus/cds_work/cds.lib /media/ngxxfus/cds_work/mylib2/nand2/run2.vlr /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 @(#)$CDS: dfIIToVldb version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/dfIIToVldb on Fri Feb  7 14:57:38 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/dfIIToVldb on Mon May 12 07:55:14 2025
 
   
 *************************************************************** 
@@ -138,10 +138,10 @@ run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/dfI
  
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
-Top Cell Library: "mylib2"
-Top Cell Name: "nand2"
+Top Cell Library: "TTVLSI_NGXXFUS"
+Top Cell Name: "NOT"
 Top Cell View: "schematic"
-Output Data Base Name: "/home/buet/cds_work/mylib2/nand2/run2.sdb"
+Output Data Base Name: "/media/ngxxfus/cds_work/mylib2/nand2/run2.sdb"
 Simulator Name: "auLvs"
 View List: "auLvs schematic symbol"
 Stop List: "auLvs"
@@ -174,8 +174,10 @@ done!
 Loaded gpdk090/libInit.il successfully!
 *WARNING* envSetVal: could not find tool[.partition] 'hspiceD.envOpts'
 Net Listing Mode is Analog
-writing /home/buet/cds_work/mylib2/nand2/run2.sdb
- inputting /home/buet/cds_work/mylib2/nand2/run2.sdb
+Global net VDD! found
+Global net VSS! found
+writing /media/ngxxfus/cds_work/mylib2/nand2/run2.sdb
+ inputting /media/ngxxfus/cds_work/mylib2/nand2/run2.sdb
 Reading layout network
  inputting network ./mylib2/nand2/run2.ldb
 Preprocessing schematic network phase 1
@@ -184,7 +186,7 @@ Preprocessing layout network phase 1
  This binding will be skipped.
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.01m  wall=0.03m  mem=20.11mb
+cpu=0.00m  wall=0.02m  mem=20.07mb
 
 Finished /home/buet/cadence/ASSURA41/tools/assura/bin/nvn
 
@@ -193,11 +195,11 @@ Executing: bulk = cellBoundary(root)
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.20  elap: 7  pf: 0  in: 0  out: 0  virt: 0M  phys: 16128M
+cpu: 0.16  elap: 5  pf: 8  in: 0  out: 1312  virt: 0M  phys: 16128M
 
 Running the Task Processor, 1 cells, 2658 steps...
 
-Top Cell is 'nand2 layout mylib2'
+Top Cell is 'NOT layout TTVLSI_NGXXFUS'
 
 Executing: Bondpad = geomOr(Bondpad Bondpad_pin)
 
@@ -636,8 +638,6 @@ Executing: _nmos_12 = geomAndNot(L8530 L8948)
 Executing: _nmos_25 = geomAndNot(L64343 L8948)
 
 Executing: geomConnect((via bp_tap Bondpad metal9_conn) (via Metal9_v Metal9_p metal9_co...
- See the label report in "run2.erc" file for details.
-
 
 Executing: geomStamp(ptap pdiff_conn error)
 
@@ -652,7 +652,7 @@ Executing: geomStamp(nb_tap nwell_conn error)
 Executing: geomStamp(Nburied nb_tap error)
 
 Executing: extractMOS("nmos1v" _nmos_12 (poly_conn "G") (ndiff_conn "S" "D") (psubstrate...
-         2 'nmos1v' created in cell 'nand2 layout mylib2'.
+         1 'nmos1v' created in cell 'NOT layout TTVLSI_NGXXFUS'.
 
 Executing: attachParameter(w "w" _nmos_12)
 
@@ -737,7 +737,7 @@ Executing: attachParameter(sdarea ("as" "S") ("ad" "D") _nmos_25_native shared)
 Executing: attachParameter(sdperimeter ("ps" "S") ("pd" "D") _nmos_25_native shared)
 
 Executing: extractMOS("pmos1v" _pmos_12 (poly_conn "G") (pdiff_conn "S" "D") (nwell_conn...
-         2 'pmos1v' created in cell 'nand2 layout mylib2'.
+         1 'pmos1v' created in cell 'NOT layout TTVLSI_NGXXFUS'.
 
 Executing: attachParameter(w "w" _pmos_12)
 
@@ -1366,12 +1366,12 @@ Executing: (saveInterconnect (npn_emit "Nimp"))
 Executing: (saveInterconnect (npn_coll "Nwell"))
 
 Finished running rules. Task processor time in main process:
-cpu: 0.15  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 1352M
+cpu: 0.32  elap: 0  pf: 19  in: 0  out: 3136  virt: 0M  phys: 1368M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 12864M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 12856M
 
 
 *****  aveng terminated normally  *****
@@ -1379,7 +1379,7 @@ cpu: 0.01  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 12864M
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/aveng
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avrpt /home/buet/cds_work/mylib2/nand2/run2.rsf
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avrpt /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 
@@ -1387,7 +1387,7 @@ Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 @(#)$CDS: avrpt version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:12 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/avrpt on Fri Feb  7 14:57:41 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/avrpt on Mon May 12 07:55:15 2025
 
 
    Creating Error Database 'run2'...
@@ -1517,13 +1517,13 @@ Total  errors:                                               0            0
 
    Finished creating Error Database ...
 
-   Writing Report into /home/buet/cds_work/mylib2/nand2/run2.err ...
+   Writing Report into /media/ngxxfus/cds_work/mylib2/nand2/run2.err ...
 
-avrpt cpu sec:    0.10  elapsed:     0  virtual:    81M
+avrpt cpu sec:    0.07  elapsed:     1  virtual:    81M
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/avrpt
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avcallproc /home/buet/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /home/buet/cds_work/cds.lib
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avcallproc /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /media/ngxxfus/cds_work/cds.lib
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 
@@ -1531,7 +1531,7 @@ Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/avcallproc
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avnx /home/buet/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /home/buet/cds_work/cds.lib
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avnx /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -exec1 -LVS -cdslib /media/ngxxfus/cds_work/cds.lib
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
@@ -1541,28 +1541,28 @@ Checking out license for Assura_LVS 4.10
 @(#)$CDS: avnx version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:12 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
 
-run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/avnx on Fri Feb  7 14:57:43 2014
+run on cadence from /home/buet/cadence/ASSURA41/tools.lnx86/assura/bin/32bit/avnx on Mon May 12 07:55:17 2025
 
 avnx started...
-cpu: 0.14  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 16M
+cpu: 0.10  elap: 1  pf: 9  in: 0  out: 1632  virt: 0M  phys: 16M
 
 Run time =  0.00 seconds
-CPU time =  0.28 seconds
+CPU time =  0.24 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 12928M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 0  virt: 0M  phys: 12944M
 ***** avnx terminated normally ***** 
 
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/avnx
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/nvn /home/buet/cds_work/mylib2/nand2/run2.rsf -postExtract -exec1 -cdslib /home/buet/cds_work/cds.lib
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/nvn /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -postExtract -exec1 -cdslib /media/ngxxfus/cds_work/cds.lib
 Checking out license for Assura_LVS 4.10 
 @(#)$CDS: nvn version av4.1:Production:dfII6.1.4:IC6.1.4.500.10 07/01/2011 03:13 (sjlin80) $
 sub-version 4.1_USR2_HF8, integ signature 2011-07-01-0228
-run on cadence at Fri Feb  7 14:57:44 2014
+run on cadence at Mon May 12 07:55:18 2025
   
 *************************************************************** 
   
@@ -1581,9 +1581,9 @@ Preprocessing schematic network phase 1
 Preprocessing layout network phase 1
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-Top cell  nand2 schematic mylib2 vs nand2 layout mylib2
-Schematic and Layout Match
-cpu=0.01m  wall=0.00m  mem=20.12mb
+Top cell  NOT schematic TTVLSI_NGXXFUS vs NOT layout TTVLSI_NGXXFUS
+Compare errors, please see /media/ngxxfus/cds_work/mylib2/nand2/run2.csm and /media/ngxxfus/cds_work/mylib2/nand2/run2.cls files.
+cpu=0.00m  wall=0.00m  mem=20.17mb
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/nvn
 
@@ -1595,7 +1595,7 @@ Starting /home/buet/cadence/ASSURA41//tools/assura/bin/vldbToRpa run2.lnn run2.t
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/vldbToRpa
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/ercChk /home/buet/cds_work/mylib2/nand2/run2.rsf
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/ercChk /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
@@ -1636,7 +1636,7 @@ Loaded gpdk090/libInit.il successfully!
 
 Finished /home/buet/cadence/ASSURA41//tools/assura/bin/ercChk
 
-Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avcallproc /home/buet/cds_work/mylib2/nand2/run2.rsf -trp -exec1
+Starting /home/buet/cadence/ASSURA41//tools/assura/bin/avcallproc /media/ngxxfus/cds_work/mylib2/nand2/run2.rsf -trp -exec1
 
 Loading tech rule set file : /home/buet/cadence/gpdk090_v4.6/assura/techRuleSets
 
@@ -1649,7 +1649,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Fri Feb  7 14:57:47 2014
+Run ended: Mon May 12 07:55:20 2025
 
 *****  Assura terminated normally  *****
 

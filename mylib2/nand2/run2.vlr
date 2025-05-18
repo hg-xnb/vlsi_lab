@@ -8,9 +8,9 @@
 ; form additions
 avSimName = "auLvs"
 avDisableWildcardPG = nil
-avLibName  = "mylib2"
-avCellName = "nand2"
+avLibName  = "TTVLSI_NGXXFUS"
+avCellName = "NOT"
 avViewName = "schematic"
 avViewList = "auLvs schematic symbol"
 avStopList = "auLvs"
-avVldbFile = "/home/buet/cds_work/mylib2/nand2/run2.sdb"
+avVldbFile = "/media/ngxxfus/cds_work/mylib2/nand2/run2.sdb"
